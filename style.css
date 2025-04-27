@@ -113,11 +113,24 @@ p {
   font-size: 24px;
   text-decoration: none;
   box-shadow: var(--box-shadow);
-  display: none; /* Сначала скрыта */
+  display: none; 
   z-index: 1000;
 }
 
-/* Когда пользователь прокрутит вниз */
+
 .back-to-top.show {
   display: block;
+}
+.hero img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  margin: 20px auto;
+}
+
+.hero img:hover {
+  transform: scale(1.05);
 }
