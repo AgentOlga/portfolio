@@ -135,3 +135,6 @@ footer {
   color: var(--primary-color);
   text-decoration: underline;
 }
+html {
+  scroll-behavior: smooth;
+}
