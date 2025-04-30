@@ -193,7 +193,7 @@ html {
   top: -50px;
   width: 30px;
   height: 30px;
-  background-image: url("images/flower.png"); /* добавь свой PNG цветка */
+  background-image: url("images/flower.png"); 
   background-size: cover;
   opacity: 0.5;
   animation: fall linear infinite;
