@@ -1,6 +1,7 @@
 :root {
   --primary-color: #6c63ff;
   --secondary-color: #f5f2fe;
+  --footer-color: #e2d9ee;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -36,6 +37,17 @@ p {
   box-shadow: var(--box-shadow);
 }
 
+.navbar-nav .nav-link {
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active {
+  color: var(--primary-color);
+}
+
 /* Hero Section */
 .hero {
   background: var(--secondary-color);
@@ -56,14 +68,17 @@ p {
 .btn-primary {
   background-color: var(--primary-color);
   border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
   transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
-  background-color: #5548c8;
+  background-color: #5a52d6;
 }
 
-/* "Back to Top" Button */
+/* Back to Top Button */
 .back-to-top {
   position: fixed;
   bottom: 20px;
@@ -87,7 +102,7 @@ p {
   background: #5548c8;
 }
 
-/* Анимация плавного появления */
+
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -99,15 +114,9 @@ p {
   transform: translateY(0);
 }
 
-/* Footer */
-footer {
-  background: var(--secondary-color);
-  color: #555;
-  font-size: 16px;
-}
 /* Contact Section */
 .contact-section {
-  background-color: #f5f2fe;
+  background-color: var(--secondary-color);
   padding: 60px 20px;
   border-radius: 12px;
   margin-top: 50px;
@@ -135,40 +144,18 @@ footer {
   color: var(--primary-color);
   text-decoration: underline;
 }
-html {
-  scroll-behavior: smooth;
-}
-.navbar-nav .nav-link {
-  color: #000; 
-  transition: color 0.3s ease;
-}
 
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link:focus,
-.navbar-nav .nav-link.active {
-  color: #6c63ff; 
-}
-.footer {
-  background-color: #f9f7fe;
-}
-.btn-primary {
-  background-color: #6C63FF;
-  border: none;
-  padding: 12px 24px;
-  font-size: 16px;
-  border-radius: 6px;
-}
-.btn-primary:hover {
-  background-color: #5a52d6;
-}
+
 .social-links img {
   transition: transform 0.3s ease;
 }
+
 .social-links img:hover {
   transform: scale(1.2);
 }
+
 .social-links a {
-  color: #6c63ff;
+  color: var(--primary-color);
   font-size: 30px;
   margin: 0 15px;
   transition: all 0.3s ease-in-out;
@@ -178,3 +165,16 @@ html {
   color: #4b4bff;
   transform: scale(1.2);
 }
+
+/* Footer */
+footer {
+  background: var(--footer-color);
+  color: #555;
+  font-size: 16px;
+  padding: 30px 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
