@@ -138,3 +138,43 @@ footer {
 html {
   scroll-behavior: smooth;
 }
+.navbar-nav .nav-link {
+  color: #000; 
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active {
+  color: #6c63ff; 
+}
+.footer {
+  background-color: #f9f7fe;
+}
+.btn-primary {
+  background-color: #6C63FF;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+}
+.btn-primary:hover {
+  background-color: #5a52d6;
+}
+.social-links img {
+  transition: transform 0.3s ease;
+}
+.social-links img:hover {
+  transform: scale(1.2);
+}
+.social-links a {
+  color: #6c63ff;
+  font-size: 30px;
+  margin: 0 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+  color: #4b4bff;
+  transform: scale(1.2);
+}
